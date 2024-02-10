@@ -40,22 +40,22 @@ const CoursesPage = () => {
     return (
         <>
             <div className='mt-10 container'>
-                <div className='px-12'>
+                <div className='courses-search-bar-div px-12'>
                     <input
                         type="search"
                         name="search-bar"
                         id="search-bar"
                         placeholder='Search here'
-                        className=' flex justify-center rounded-2xl px-5 bg-slate-200 py-[0.2rem] w-[20rem] border border-gray-600'
+                        className='courses-search-bar flex justify-center rounded-2xl px-5 bg-slate-200 py-[0.2rem] w-[20rem] border border-gray-600'
                         onChange={(e) => setSearch(e.target.value)}
                     />
                 </div>
-                <div className='flex justify-center gap-10 mt-10 pt-10 pb-20 rounded flex-wrap'>
+                <div className='courses-page-cards flex justify-center gap-10 mt-10 pt-10 pb-20 rounded flex-wrap'>
                     {
                         courses.filter((prdct) => prdct.name.toLowerCase().includes(search))
                             .map((item) => (
                                 <div key={item.id}>
-                                    <div className='border w-[280px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50'>
+                                    <div className='courses-page-card border w-[280px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50'>
                                         <Link onClick={() => localStorage.setItem("item", JSON.stringify(item))} to={`/product-details/${item.name}/${item.id}`}>
                                             <img
                                                 src={item.thumbnail}

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <>
-            <div className='flex justify-between px-[3rem] items-center py-2 w-full sticky top-0 bg-slate-50'>
+            <div className='flex justify-between px-[3rem] items-center py-[0.8rem] w-full sticky top-0 bg-slate-100'>
                 <div>
                     <Link to={"/"} className='text-2xl font-extrabold text-slate-700'>Courses</Link>
                 </div>
