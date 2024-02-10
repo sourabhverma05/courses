@@ -308,6 +308,14 @@
     gap: 2.5rem;
   }
 
+  .student-name {
+    font-size: 2rem;
+  }
+
+  .student-deatils span {
+    font-size: 20px;
+  }
+
   .student-deatils-sec img {
     border-radius: 100%;
   }
@@ -321,8 +329,8 @@
   }
 }
 
- @media screen and (min-width: 577px) and (max-width:768px) {
-    .student-deatils {
+@media screen and (min-width: 577px) and (max-width:768px) {
+  .student-deatils {
     gap: 4rem;
   }
 
@@ -340,9 +348,9 @@
   }
 }
 
- @media screen and (min-width: 769px) and (max-width:992px) {
+@media screen and (min-width: 769px) and (max-width:992px) {
 
-     .student-deatils {
+  .student-deatils {
     gap: 7rem;
   }
 
@@ -356,9 +364,9 @@
   }
 }
 
- @media screen and (min-width: 993px) and (max-width:1200px) {
-  
-     .student-deatils {
+@media screen and (min-width: 993px) and (max-width:1200px) {
+
+  .student-deatils {
     gap: 7rem;
   }
 
@@ -372,8 +380,8 @@
   }
 }
 
- @media screen and (min-width: 1201px) and (max-width:1400px) {
-    .student-deatils {
+@media screen and (min-width: 1201px) and (max-width:1400px) {
+  .student-deatils {
     gap: 7rem;
   }
 
@@ -385,7 +393,8 @@
     padding-top: 0;
     gap: 2.5rem;
   }
-  .profile-page-card{
+
+  .profile-page-card {
     width: 290px;
   }
 }

@@ -38,7 +38,7 @@ const MyProfilePage = () => {
                 <img src={items.image} alt="#Student Profile Picture" className="rounded-2xl w-[200px] h-[200px] shadow-xl md:rounded-full xs:rounded-full" />
               </div>
               <div className="leading-[2.3rem] text-xl text-gray-900">
-                <h1 className="text-5xl font-bold pb-2">{items.name}</h1>
+                <h1 className="student-name text-5xl font-bold pb-2">{items.name}</h1>
                 <span className="pb-1 flex items-center gap-4 ">
                   <User2 />
                   {items.gender}
@@ -46,10 +46,10 @@ const MyProfilePage = () => {
                 <span className="pb-1 flex items-center gap-4 ">
                   <Phone /> {items.phone}
                 </span>
-                <span className=" flex items-center gap-4 pb-1 text-wrap ...">
+                <span className="student-email flex items-center gap-4 pb-1 text-wrap ...">
                   <Mail /> {items.email}
                 </span>
-                <span className=" flex items-center gap-4 text-wrap">
+                <span className="student-address flex items-center gap-4 text-wrap">
                   <IoLocateOutline />
                   {items.address}
                 </span>
