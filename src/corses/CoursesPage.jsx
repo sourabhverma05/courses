@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Button } from './components/ui/button'
+import { Button } from '../components/ui/button'
 import { useDispatch } from 'react-redux';
-import { enroll } from './redux/courseSlice';
+import { enroll } from '../redux/courseSlice';
 import toast, { Toaster } from 'react-hot-toast';
 
 const CoursesPage = () => {
@@ -39,18 +39,18 @@ const CoursesPage = () => {
     };
     return (
         <>
-            <div className='mt-10'>
-                <div className='px-4'>
+            <div className='mt-10 container'>
+                <div className='px-12'>
                     <input
                         type="search"
                         name="search-bar"
                         id="search-bar"
-                        placeholder='Search here...'
-                        className=' flex justify-center rounded-2xl px-5 bg-slate-200 py-[0.1rem] border border-gray-600'
+                        placeholder='Search here'
+                        className=' flex justify-center rounded-2xl px-5 bg-slate-200 py-[0.2rem] w-[20rem] border border-gray-600'
                         onChange={(e) => setSearch(e.target.value)}
                     />
                 </div>
-                <div className='flex justify-center gap-10 mt-10 py-10 rounded flex-wrap'>
+                <div className='flex justify-center gap-10 mt-10 pt-10 pb-20 rounded flex-wrap'>
                     {
                         courses.filter((prdct) => prdct.name.toLowerCase().includes(search))
                             .map((item) => (

@@ -61,3 +61,152 @@
 
   }
 }
+
+
+
+@media screen and (min-width: 360px) and (max-width:576px) {
+  .home-page-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .home-page-img-sec {
+    margin: auto;
+  }
+
+  .home-page-main-section img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .home-page-main-section .home-page-details {
+    text-align: center;
+  }
+
+  .home-page-main-section .home-page-details h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-page-main-section .home-page-details .home-page-paragraph {
+    opacity: 0.8;
+  }
+
+  .home-page-main-section .home-page-buttons {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+  .home-page-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .home-page-img-sec {
+    margin: auto;
+  }
+
+  .home-page-main-section img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .home-page-main-section .home-page-details {
+    text-align: center;
+  }
+
+  .home-page-main-section .home-page-details h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-page-main-section .home-page-details .home-page-paragraph {
+    opacity: 0.8;
+  }
+
+  .home-page-main-section .home-page-buttons {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+  .home-page-main-section {
+    display: flex;
+    gap: 40px;
+  }
+
+  .home-page-main-section .home-page-details {
+    width: 70%;
+  }
+
+  .home-page-main-section .home-page-details h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-page-main-section .home-page-details .home-page-paragraph {
+    opacity: 0.8;
+  }
+
+  .home-page-card-sec {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 993px) and (max-width:1200px) {
+  .home-page-main-section {
+    display: flex;
+    gap: 40px;
+  }
+
+  .home-page-main-section .home-page-details {
+    width: 70%;
+  }
+
+  .home-page-main-section .home-page-details h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-page-main-section .home-page-details .home-page-paragraph {
+    opacity: 0.8;
+  }
+
+  .home-page-card-sec {
+    gap: 10px;
+  }
+
+  .home-page-card-sec .cards {
+    width: 270px;
+  }
+
+}
+@media screen and (min-width: 1201px) and (max-width:1400px) {
+  .home-page-main-section {
+    display: flex;
+    gap: 8rem;
+  }
+
+  .home-page-main-section .home-page-details {
+    width: 70%;
+  }
+
+  .home-page-main-section .home-page-details h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-page-main-section .home-page-details .home-page-paragraph {
+    opacity: 0.8;
+  }
+
+  .home-page-card-sec {
+    gap: 10px;
+  }
+
+  .home-page-card-sec .cards {
+    width: 270px;
+  }
+
+}

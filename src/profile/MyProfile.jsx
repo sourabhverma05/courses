@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Progress } from './components/ui/progress';
+import { Progress } from '../components/ui/progress';
 import { IoArrowBackOutline, IoLocateOutline } from 'react-icons/io5';
 import { Mail, Phone, User2 } from 'lucide-react';
 
@@ -27,39 +27,40 @@ const MyProfilePage = () => {
 
   return (
     <div className="container">
-      <div className="bg-gray-50 border-2 rounded mt-10 w-auto">
-        <Link to="/">
-          <IoArrowBackOutline className="p-1 text-4xl text-gray-700 rounded-full" />
+        <Link to="/" className=''>
+          <IoArrowBackOutline className="p-1 mt-5 text-4xl text-gray-700 rounded-full" />
         </Link>
+      <div className="bg-gray-50 border-2 rounded mt-10 w-auto">
         {Array.isArray(student) &&
           student.map((items) => (
-            <div key={items.id} className="gap-[1rem] px-[3rem] h-auto items-center flex-wrap py-16">
-              <div className="md:m-auto">
+            <div key={items.id} className="flex gap-[10rem] px-[3rem] h-auto items-center flex-wrap py-16">
+              <div>
                 <img src={items.image} alt="#Student Profile Picture" className="rounded-2xl w-[200px] h-[200px] shadow-xl md:rounded-full xs:rounded-full" />
               </div>
-              <div className="leading-[2.3rem] text-xl text-gray-900 m-auto w-max">
+              <div className="leading-[2.3rem] text-xl text-gray-900">
                 <h1 className="text-5xl font-bold pb-2">{items.name}</h1>
-                <span className="pb-1">
+                <span className="pb-1 flex items-center gap-4 ">
                   <User2 />
                   {items.gender}
                 </span>
-                <span className="pb-1">
+                <span className="pb-1 flex items-center gap-4 ">
                   <Phone /> {items.phone}
                 </span>
-                <span className="pb-1 text-wrap ...">
+                <span className=" flex items-center gap-4 pb-1 text-wrap ...">
                   <Mail /> {items.email}
                 </span>
-                <span className="text-wrap">
+                <span className=" flex items-center gap-4 text-wrap">
                   <IoLocateOutline />
-                  {items.address} ({items.state})
+                  {items.address}
                 </span>
               </div>
             </div>
           ))}
       </div>
-      <div className="flex justify-center m-auto gap-7 my-10 py-10 rounded flex-wrap">
+      <div className=" m-auto gap-7 my-10 py-10 rounded flex-wrap">
+        <h1 className='text-4xl font-semibold text-center'>Enrolled Courses</h1>
         {courseData.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className='py-10'>
             <div className="border w-[260px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50">
               <Link onClick={() => localStorage.setItem('item', JSON.stringify(item))} to={`/product-details/${item.name}/${item.id}`}>
                 <img src={item.thumbnail} alt="#user-image" width={300} height={300} className="rounded-lg h-[180px]" />

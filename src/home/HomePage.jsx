@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button } from './components/ui/button'
+import { Button } from '../components/ui/button'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { enroll } from './redux/courseSlice'
+import { enroll } from '../redux/courseSlice'
 import toast, { Toaster } from 'react-hot-toast'
 
 
@@ -32,27 +32,27 @@ const HomePage = () => {
     }
 
     return (
-        <>
-            <div className='flex items-center flex-wrap '>
-                <div className='w-max h-auto'>
-                    <img className='w-max h-auto' src="https://blogs.birlabrainiacs.com/wp-content/uploads/2021/08/e01f5737357b9fea77350d2dd2e0bc60.jpg" alt="HomeImage" />
+        <div className='container'>
+            <div className='home-page-main-section grid grid-cols-2 items-center gap-[10rem]'>
+                <div className='home-page-img-sec h-auto'>
+                    <img className='h-auto' src="https://blogs.birlabrainiacs.com/wp-content/uploads/2021/08/e01f5737357b9fea77350d2dd2e0bc60.jpg" alt="HomeImage" />
                 </div>
-                <div className="leading-[1.7rem]">
+                <div className="home-page-details leading-[1.7rem]">
                     <h1 className='text-6xl font-bold pb-5'>Online Education</h1>
                     <h4 className='text-2xl font-semibold pb-5 leading-loose'>Learn something new anywhere & anytime</h4>
-                    <p className='text-wrap'>Magni incidunt quaerat nostrum vel distinctio quasi a, inventore ducimus velit, tempora repellendus eaque atque, quod magnam! Perspiciatis, consequatur beatae! Optio eveniet alias dignissimos itaque repellendus reiciendis ab, deleniti quos!</p>
-                    <div className='mt-[3rem] flex gap-5'>
+                    <p className='home-page-paragraph text-wrap'>Magni incidunt quaerat nostrum vel distinctio quasi a, inventore ducimus velit, tempora repellendus eaque atque, quod magnam! Perspiciatis, consequatur beatae! Optio eveniet alias dignissimos itaque repellendus reiciendis ab, deleniti quos!</p>
+                    <div className='home-page-buttons mt-[3rem] flex gap-5'>
                         <Button className='py-5'>SIGN UP</Button>
                         <Button className='py-5'>TRIEL 3 DAYS</Button>
                     </div>
                 </div>
 
             </div>
-            <div className='flex justify-center gap-10 mt-10 bg-gray-100 py-10 rounded flex-wrap'>
+            <div className='home-page-card-sec flex justify-center gap-10 mt-10 bg-gray-100 py-10 rounded flex-wrap'>
                 {
                     courses.slice(0, 4).map((item) => (
-                        <div key={item.id}>
-                            <div className='border w-[280px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50'>
+                        <div key={item.id} className=''>
+                            <div className='cards border w-[280px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50'>
                                 <Link onClick={() => localStorage.setItem("item", JSON.stringify(item))} to={`/product-details/${item.name}/${item.id}`}>
                                     <img
                                         src={item.thumbnail}
@@ -75,9 +75,12 @@ const HomePage = () => {
                         </div>
                     ))
                 }
-            </div>
 
-        </>
+            </div>
+            <div className='m-auto flex justify-center my-10'>
+                <Link to={"/courses"} className='text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-gray-50 border-2 px-6 py-[0.4rem] rounded-lg'>All  Courses</Link>
+            </div>
+        </div>
     )
 }
 

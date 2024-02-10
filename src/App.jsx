@@ -1,17 +1,17 @@
 import './App.css'
-import CoursesPage from './CoursesPage'
-import HomePage from './HomePage'
-import MyProfilePage from './MyProfile'
-import Student from './MyProfile'
+import CoursesPage from './corses/CoursesPage'
+import HomePage from './home/HomePage'
+import MyProfilePage from './profile/MyProfile'
+import Student from './profile/MyProfile'
 import NavBar from './NavBar'
-import CourseDetailsPage from './CourseDetails'
+import CourseDetailsPage from './course-details/CourseDetails'
 import { BrowserRouter as BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <div className='container'>
+      <div>
         <BrowserRouter>
         <NavBar/>
           <Routes>
