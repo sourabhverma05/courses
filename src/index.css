@@ -221,6 +221,19 @@
     width: 100%;
     margin-bottom: -30px;
   }
+
+  .courses-page-cards {
+    margin-top: 20px;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .courses-page-card {
+    width: 220px;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width:768px) {
@@ -245,6 +258,8 @@
     justify-content: start;
     margin-left: 45px;
   }
+
+
 }
 
 @media screen and (min-width: 993px) and (max-width:1200px) {
@@ -278,6 +293,133 @@
     margin-top: 20px;
     justify-content: start;
     margin-left: 30px;
+  }
+}
+
+
+
+/* ===================================================== COURSE DETAILS PAGE COMPONENT ===================================================== */
+
+
+@media screen and (min-width: 360px) and (max-width:576px) {
+  .course-details-page {
+    flex-wrap: wrap;
+  }
+
+  .course-detail-image-div {
+    width: 100%;
+  }
+
+  .course-detail-image {
+    width: 100%;
+  }
+
+  .course-details-sec {
+    width: 100%;
+  }
+
+  .details-about-sec {
+    padding-top: .3rem;
+  }
+
+  .about-sec-heading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+  .course-details-page {
+    flex-wrap: wrap;
+  }
+
+  .course-detail-image-div {
+    width: 100%;
+  }
+
+  .course-detail-image {
+    width: 100%;
+  }
+
+  .course-details-sec {
+    width: 100%;
+  }
+
+  .details-about-sec {
+    padding-top: .3rem;
+  }
+
+  .about-sec-heading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+  .course-details-page {
+    flex-wrap: wrap;
+  }
+
+  .course-detail-image-div {
+    width: 100%;
+  }
+
+  .course-detail-image {
+    width: 100%;
+  }
+
+  .course-details-sec {
+    width: 100%;
+  }
+
+  .details-about-sec {
+    padding-top: .3rem;
+  }
+
+  .about-sec-heading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width:1200px) {
+  .course-detail-image-div {
+    width: 100%;
+  }
+
+  .course-detail-image {
+    width: 100%;
+  }
+
+  .course-details-sec {
+    width: 100%;
+  }
+
+  .details-about-sec {
+    padding-top: .3rem;
+  }
+
+  .about-sec-heading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width:1400px) {
+  .course-detail-image-div {
+    width: 100%;
+  }
+
+  .course-detail-image {
+    width: 100%;
+  }
+
+  .course-details-sec {
+    width: 100%;
+  }
+
+  .details-about-sec {
+    padding-top: .3rem;
+  }
+
+  .about-sec-heading {
+    padding-top: 0;
   }
 }
 

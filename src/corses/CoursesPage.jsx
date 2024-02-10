@@ -50,7 +50,7 @@ const CoursesPage = () => {
                         onChange={(e) => setSearch(e.target.value)}
                     />
                 </div>
-                <div className='courses-page-cards flex justify-start gap-12 mt-10 pt-10 pb-20 rounded flex-wrap'>
+                <div className='container courses-page-cards flex justify-start gap-12 mt-10 pt-10 pb-20 rounded flex-wrap'>
                     {
                         courses.filter((prdct) => prdct.name.toLowerCase().includes(search))
                             .map((item) => (
