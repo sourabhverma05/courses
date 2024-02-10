@@ -27,13 +27,13 @@ const MyProfilePage = () => {
 
   return (
     <div className="container">
-        <Link to="/" className=''>
+        <Link to="/" className='bg-gray-400'>
           <IoArrowBackOutline className="p-1 mt-5 text-4xl text-gray-700 rounded-full" />
         </Link>
-      <div className="bg-gray-50 border-2 rounded mt-10 w-auto">
+      <div className="student-deatils-sec bg-gray-50 border-2 rounded mt-10 w-auto">
         {Array.isArray(student) &&
           student.map((items) => (
-            <div key={items.id} className="flex gap-[10rem] px-[3rem] h-auto items-center flex-wrap py-16">
+            <div key={items.id} className="student-deatils flex gap-[10rem] px-[3rem] h-auto items-center flex-wrap py-16">
               <div>
                 <img src={items.image} alt="#Student Profile Picture" className="rounded-2xl w-[200px] h-[200px] shadow-xl md:rounded-full xs:rounded-full" />
               </div>
@@ -57,11 +57,11 @@ const MyProfilePage = () => {
             </div>
           ))}
       </div>
-      <div className=" m-auto gap-7 my-10 py-10 rounded flex-wrap">
-        <h1 className='text-4xl font-semibold text-center'>Enrolled Courses</h1>
+        <h1 className='text-4xl font-semibold text-center pt-10'>Enrolled Courses</h1>
+      <div className="enrolled-courses-sec flex m-auto gap-5 my-10 py-10 rounded flex-wrap">
         {courseData.map((item) => (
-          <div key={item.id} className='py-10'>
-            <div className="border w-[260px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50">
+          <div key={item.id} className='pb-10'>
+            <div className="profile-page-card border w-[260px] h-auto p-2 rounded-lg flex flex-col gap-[0.4rem] bg-slate-50">
               <Link onClick={() => localStorage.setItem('item', JSON.stringify(item))} to={`/product-details/${item.name}/${item.id}`}>
                 <img src={item.thumbnail} alt="#user-image" width={300} height={300} className="rounded-lg h-[180px]" />
                 <div className="px-3 flex flex-col gap-1">
