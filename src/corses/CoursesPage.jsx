@@ -40,13 +40,13 @@ const CoursesPage = () => {
     return (
         <>
             <div className='mt-10 container'>
-                <div className='courses-search-bar-div px-12'>
+                <div className='courses-search-bar-div px-12 flex justify-center'>
                     <input
                         type="search"
                         name="search-bar"
                         id="search-bar"
                         placeholder='Search here'
-                        className='courses-search-bar flex justify-center rounded-2xl px-5 bg-slate-200 py-[0.2rem] w-[20rem] border border-gray-600'
+                        className='courses-search-bar rounded-lg px-2 bg-slate-200 py-[0.2rem] w-[50%] border border-gray-600'
                         onChange={(e) => setSearch(e.target.value)}
                     />
                 </div>

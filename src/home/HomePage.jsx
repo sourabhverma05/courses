@@ -43,7 +43,7 @@ const HomePage = () => {
                     <p className='home-page-paragraph text-wrap'>Magni incidunt quaerat nostrum vel distinctio quasi a, inventore ducimus velit, tempora repellendus eaque atque, quod magnam! Perspiciatis, consequatur beatae! Optio eveniet alias dignissimos itaque repellendus reiciendis ab, deleniti quos!</p>
                     <div className='home-page-buttons mt-[3rem] flex gap-5'>
                         <Button className='py-5'>SIGN UP</Button>
-                        <Button className='py-5'>TRIEL 3 DAYS</Button>
+                        <Button className='py-5'>TRIAL 3 DAYS</Button>
                     </div>
                 </div>
 

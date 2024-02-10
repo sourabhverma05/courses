@@ -221,10 +221,6 @@
     width: 100%;
     margin-bottom: -30px;
   }
-
-  .courses-search-bar {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 577px) and (max-width:768px) {
@@ -243,10 +239,6 @@
 
   }
 
-  .courses-search-bar {
-    width: 60%;
-  }
-
   .courses-page-cards {
     margin-top: 20px;
     gap: 1.3rem;
@@ -260,10 +252,6 @@
   .courses-search-bar-div {
     width: 100%;
 
-  }
-
-  .courses-search-bar {
-    width: 40%;
   }
 
   .courses-page-cards {
@@ -284,10 +272,6 @@
   .courses-search-bar-div {
     width: 100%;
 
-  }
-
-  .courses-search-bar {
-    width: 40%;
   }
 
   .courses-page-cards {
