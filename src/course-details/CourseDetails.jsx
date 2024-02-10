@@ -43,7 +43,7 @@ const CourseDetailsPage = () => {
             </div>
 
 
-            <div className='details-about-sec px-[4.5rem] py-12'>
+            <div className='container details-about-sec px-[4.5rem] py-12'>
                 <h2 className='about-sec-heading text-3xl font-bold py-5 text-gray-800'>About this course</h2>
                 <p>
                     Quaerat nesciunt, nemo dolorem non rerum saepe dicta perferendis ullam mollitia porro odit voluptatem et ducimus, vero minus nobis neque quae, fugit culpa eaque maiores voluptas. Iure rerum pariatur laboriosam.
